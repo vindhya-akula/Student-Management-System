@@ -28,3 +28,27 @@ A Student Management System built using **Python** and **MySQL** that provides c
 - Learn SDLC concepts through project development
 - Build a web application using Flask
 - Implement version control with Git and GitHub
+
+## Future Enhancements
+
+- Search Students
+- Login Authentication
+- Student Dashboard
+- Pagination
+- Responsive UI
+- Export to Excel/PDF
+
+## Installation
+
+```bash
+git clone <https://github.com/vindhya-akula/Student-Management-System>
+cd Student-Management-System
+
+python -m venv venv
+
+# Activate virtual environment
+
+pip install -r requirements.txt
+
+python app.py
+```
