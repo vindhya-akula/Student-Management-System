@@ -52,3 +52,14 @@ pip install -r requirements.txt
 
 python app.py
 ```
+
+## Features
+
+- ✅ Add Student
+- ✅ View Students
+- ✅ Update Student (Console Version)
+- ✅ Delete Student (Console Version)
+- ✅ MySQL Database Integration
+- ✅ Flask Web Interface
+- 🚧 Update Student (Flask - In Progress)
+- 🚧 Delete Student (Flask - In Progress)
