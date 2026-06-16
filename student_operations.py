@@ -1,20 +1,16 @@
 from db_connection import get_connection
 
-def add_student():
+def add_student(name, age, marks):
+    # Only database insertion
     conn = get_connection()
     cursor = conn.cursor()
 
-    name = input("Enter student name: ")
-    age = int(input("Enter student age: "))
-    marks = int(input("Enter student marks: "))
 
     sql = "INSERT INTO students (name, age, marks) VALUES (%s, %s, %s)"
     values = (name, age, marks)
 
     cursor.execute(sql, values)
     conn.commit()
-
-    print("✅Student added successfully!")
 
     cursor.close()
     conn.close()

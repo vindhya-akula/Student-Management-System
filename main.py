@@ -9,22 +9,23 @@ def menu():
     print("4. Delete Student")
     print("5. Exit")
 
-while True:
-    menu()
-    choice = input("Enter choice: ")
+if __name__ == "__main__":
+    while True:
+        menu()
+        choice = input("Enter choice: ")
 
-    if choice == "1":
-        add_student()
-    elif choice == "2":
-        view_students()
-    elif choice == "3":
-        update_student()
-    elif choice == "4":
-        delete_student()
-    elif choice == "5":
-        print("Exiting...")
-        break
-    else:
-        print("Invalid choice")
+        if choice == "1":
+            add_student()
+        elif choice == "2":
+            view_students()
+        elif choice == "3":
+            update_student()
+        elif choice == "4":
+            delete_student()
+        elif choice == "5":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice")
 
         
