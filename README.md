@@ -61,5 +61,5 @@ python app.py
 - ✅ Delete Student (Console Version)
 - ✅ MySQL Database Integration
 - ✅ Flask Web Interface
-- 🚧 Update Student (Flask - In Progress)
-- 🚧 Delete Student (Flask - In Progress)
+- Update Student (Flask - In Progress)
+- Delete Student (Flask - In Progress)

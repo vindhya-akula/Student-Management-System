@@ -1,0 +1,84 @@
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Container spacing */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Links as buttons */
+a {
+    text-decoration: none;
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Add button */
+.add-btn {
+    background-color: green;
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: orange;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: red;
+}
+
+/* Form styling */
+form {
+    width: 300px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}

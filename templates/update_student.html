@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Update Student</h1>
+
+<form method="POST">
+
+    Name:
+    <input type="text" name="name" value="{{ student[1] }}">
+
+    Age:
+    <input type="number" name="age" value="{{ student[2] }}">
+
+    Marks:
+    <input type="number" name="marks" value="{{ student[3] }}">
+
+    <button type="submit">Update</button>
+
+</form>
+
+</body>
+</html>

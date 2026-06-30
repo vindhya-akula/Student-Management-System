@@ -2,29 +2,24 @@
 <html>
 <head>
     <title>Add Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-    <h1>Add Student</h1>
+<h1>Add Student</h1>
 
-    <form method = "Post">
+<form method="POST">
+    Name:
+    <input type="text" name="name">
 
-        <label>Name:</label>
-        <input type = "text" name = "name" required>
-        <br><br>
+    Age:
+    <input type="number" name="age">
 
-        <label>Age:</label>
-        <input type="number" name = "age" required>
-        <br><br>
+    Marks:
+    <input type="number" name="marks">
 
-        <label>Marks:</label>
-        <input type="number" name = "marks" required>
-        <br><br>
+    <button type="submit">Add Student</button>
+</form>
 
-        <button type="submit">Save</button>
-    </form>
-
-    <br>
-    <a href="/">Back to Home</a>
 </body>
 </html>
