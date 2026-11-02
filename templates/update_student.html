@@ -1,27 +1,30 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Update Student</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit student | Student Hub</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
-
-<h1>Update Student</h1>
-
-<form method="POST">
-
-    Name:
-    <input type="text" name="name" value="{{ student[1] }}">
-
-    Age:
-    <input type="number" name="age" value="{{ student[2] }}">
-
-    Marks:
-    <input type="number" name="marks" value="{{ student[3] }}">
-
-    <button type="submit">Update</button>
-
-</form>
-
+<body class="form-page">
+<main class="form-card">
+    <a class="brand form-brand" href="{{ url_for('home') }}"><span class="brand-mark">S</span><span>Student<span class="brand-light">Hub</span></span></a>
+    <p class="eyebrow" style="color:#7b89cf">EDIT RECORD · #{{ student[0] }}</p>
+    <h1>Update student</h1>
+    <p class="form-intro">Make changes to this student's information.</p>
+    {% if error %}<p class="form-error" role="alert">{{ error }}</p>{% endif %}
+    <form method="post">
+        <label for="name">Student name</label>
+        <input id="name" name="name" type="text" maxlength="100" required autofocus value="{{ request.form.get('name', student[1]) }}">
+        <label for="age">Age</label>
+        <input id="age" name="age" type="number" min="1" max="120" required value="{{ request.form.get('age', student[2]) }}">
+        <label for="marks">Marks</label>
+        <input id="marks" name="marks" type="number" min="0" max="100" required value="{{ request.form.get('marks', student[3]) }}">
+        <div class="form-actions">
+            <button class="primary-button" type="submit">Save changes</button>
+            <a class="secondary-button" href="{{ url_for('home') }}">Cancel</a>
+        </div>
+    </form>
+</main>
 </body>
 </html>
